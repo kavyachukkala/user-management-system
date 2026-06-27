@@ -1,0 +1,480 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* ===========================
+   BODY
+=========================== */
+
+body{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:linear-gradient(135deg,#6C63FF,#8B5CF6,#A855F7);
+
+    overflow-x:hidden;
+
+}
+
+/* ===========================
+   BACKGROUND CIRCLES
+=========================== */
+
+body::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:350px;
+
+    height:350px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    top:-120px;
+
+    left:-120px;
+
+}
+
+body::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:300px;
+
+    height:300px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    bottom:-100px;
+
+    right:-100px;
+
+}
+
+/* ===========================
+   LOGIN CONTAINER
+=========================== */
+
+.container{
+
+    position:relative;
+
+    width:470px;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(18px);
+
+    border-radius:25px;
+
+    padding:40px;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.25);
+
+    border:1px solid rgba(255,255,255,.25);
+
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+.container h1{
+
+    color:#fff;
+
+    text-align:center;
+
+    font-size:38px;
+
+    font-weight:700;
+
+    margin-top:15px;
+
+}
+
+.container p{
+
+    color:#f3f3f3;
+
+    text-align:center;
+
+    margin-top:10px;
+
+    margin-bottom:35px;
+
+    font-size:17px;
+
+}
+
+/* ===========================
+   TOP ICON
+=========================== */
+
+.user-icon{
+
+    width:90px;
+
+    height:90px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(255,255,255,.18);
+
+    color:#fff;
+
+    font-size:45px;
+
+}
+
+/* ===========================
+   INPUT BOX
+=========================== */
+
+.input-box{
+
+    position:relative;
+
+    margin-bottom:22px;
+
+}
+
+.input-box input{
+
+    width:100%;
+
+    height:58px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:16px;
+
+    padding-left:55px;
+
+    padding-right:55px;
+
+    font-size:16px;
+
+    background:#fff;
+
+    color:#333;
+
+    transition:.3s;
+
+}
+
+.input-box input:focus{
+
+    box-shadow:0 0 0 3px rgba(108,99,255,.25);
+
+}
+
+/* ===========================
+   LEFT ICON
+=========================== */
+
+.input-box>i:first-child{
+
+    position:absolute;
+
+    left:20px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    color:#6C63FF;
+
+    font-size:19px;
+
+}
+
+/* ===========================
+   EYE ICON
+=========================== */
+
+.eye{
+
+    position:absolute;
+
+    right:20px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    cursor:pointer;
+
+    color:#6C63FF;
+
+    font-size:18px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:24px;
+
+    height:24px;
+
+}
+/* ===========================
+   LOGIN BUTTON
+=========================== */
+
+.login-btn{
+
+    width:100%;
+    height:58px;
+    border:none;
+    outline:none;
+    border-radius:16px;
+    background:#FFD43B;
+    color:#222;
+    font-size:20px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+    margin-top:10px;
+
+}
+
+.login-btn:hover{
+
+    background:#FFC107;
+    transform:translateY(-2px);
+    box-shadow:0 12px 25px rgba(0,0,0,.18);
+
+}
+
+/* ===========================
+   OR DIVIDER
+=========================== */
+
+.divider{
+
+    display:flex;
+    align-items:center;
+    margin:35px 0;
+    color:#fff;
+    font-weight:600;
+
+}
+
+.divider::before,
+.divider::after{
+
+    content:"";
+    flex:1;
+    height:1px;
+    background:rgba(255,255,255,.35);
+
+}
+
+.divider span{
+
+    margin:0 18px;
+    font-size:16px;
+
+}
+
+/* ===========================
+   SOCIAL LOGIN
+=========================== */
+
+.social-login{
+
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    margin-bottom:35px;
+
+}
+
+.social-login a{
+
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:rgba(255,255,255,.15);
+    color:#fff;
+    text-decoration:none;
+    font-size:30px;
+    border:1px solid rgba(255,255,255,.25);
+    transition:.3s;
+
+}
+
+.social-login a:hover{
+
+    background:white;
+    color:#6C63FF;
+    transform:translateY(-6px);
+
+}
+
+/* ===========================
+   LINKS
+=========================== */
+
+.bottom-text{
+
+    text-align:center;
+    color:#fff;
+    font-size:17px;
+
+}
+
+.bottom-text a{
+
+    color:#FFD43B;
+    text-decoration:none;
+    font-weight:700;
+
+}
+
+.bottom-text a:hover{
+
+    text-decoration:underline;
+
+}
+
+.forgot{
+
+    display:block;
+    text-align:right;
+    margin-top:-8px;
+    margin-bottom:22px;
+    color:white;
+    text-decoration:none;
+    font-size:15px;
+
+}
+
+.forgot:hover{
+
+    color:#FFD43B;
+
+}
+
+/* ===========================
+   ERROR MESSAGE
+=========================== */
+
+.error{
+
+    background:#ffe6e6;
+    color:#c62828;
+    padding:14px;
+    border-radius:12px;
+    margin-bottom:20px;
+    text-align:center;
+    font-weight:600;
+
+}
+
+.success{
+
+    background:#e8f5e9;
+    color:#2e7d32;
+    padding:14px;
+    border-radius:12px;
+    margin-bottom:20px;
+    text-align:center;
+    font-weight:600;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+.container{
+
+    width:92%;
+    padding:30px;
+
+}
+
+.container h1{
+
+    font-size:30px;
+
+}
+
+.user-icon{
+
+    width:75px;
+    height:75px;
+    font-size:38px;
+
+}
+
+.input-box input{
+
+    height:54px;
+    font-size:15px;
+
+}
+
+.login-btn{
+
+    height:54px;
+    font-size:18px;
+
+}
+
+.social-login a{
+
+    width:60px;
+    height:60px;
+    font-size:25px;
+
+}
+
+}
